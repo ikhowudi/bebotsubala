@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bebot Subala Photography</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="home">
+    <header><h1>Bebot <span class="lightertext">Subala</span></h1></header>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a id="navbar-brand" class="navbar-brand" href="#">Bebot Subala Photography</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="navbar-collapse navbar-right collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Featured Work</a></li>
+                    <li><a href="#ratesfaq">Rates & FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about"><p class="inner">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat sapien ac nulla rutrum dictum. Etiam interdum commodo tincidunt. Proin non dapibus nisl. Duis fermentum condimentum nunc, sed placerat nulla efficitur sit amet. Fusce commodo pretium neque, a vulputate purus ornare sit amet. Quisque cursus tempus justo. Sed congue congue neque, nec laoreet risus sollicitudin sed. Nulla facilisi. Fusce vehicula nibh eu ligula pellentesque venenatis. Ut nisi erat, viverra in neque nec, ultricies varius nulla. Maecenas quis risus et augue blandit maximus. Fusce dictum at lorem quis ultrices. Aenean non malesuada sapien, quis aliquam quam. Nam semper, ipsum eu suscipit facilisis, erat purus eleifend nisi, nec consectetur turpis nibh vel nisi." - People</p></section>
+
+    <section id="work">
+        <div class="innerwork">
+        <!-- <h3>Featured Work</h3> -->
+        <div>
+            <div id="workli1" class="workli"><a href="#lightbox1" data-toggle="modal">Example 1</a></div>
+
+                <div class="container">
+                  <div class="modal fade and carousel slide" id="lightbox1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <ol class="carousel-indicators">
+                            <li data-target="#lightbox1" data-slide-to="0" class="active"></li>
+                            <li data-target="#lightbox1" data-slide-to="1"></li>
+                            <li data-target="#lightbox1" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="item active">
+                              <img src="images/1.jpg" alt="First slide">
+                            </div>
+                            <div class="item">
+                              <img src="http://placehold.it/852x480/666/" alt="Second slide">
+                            </div>
+                            <div class="item">
+                              <img src="http://placehold.it/852x480/555/" alt="Third slide">
+                              <div class="carousel-caption"><p>captions...</p></div>
+                            </div>
+                          </div><!-- /.carousel-inner -->
+                          <a class="left carousel-control" href="#lightbox1" role="button" data-slide="prev">
+                            <span class="fa glyphicon fa-2x fa-chevron-left" aria-hidden="true"></span>
+                          </a>
+                          <a class="right carousel-control" href="#lightbox1" role="button" data-slide="next">
+                            <span class="fa glyphicon fa-2x fa-chevron-right" aria-hidden="true"></span>
+                          </a>
+                        </div><!-- /.modal-body -->
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+                </div><!-- /.container -->
+
+            <div class="workli"><a href="#example2">Example 2</a></div>
+            <div class="workli"><a href="#example3">Example 3</a></div>
+            <div class="workli"><a href="#example4">Example 4</a></div>
+            <div class="workli"><a href="#example5">Example 5</a></div>
+        </div>
+        </div>
+    </section>
+
+    <section id="ratesfaq">
+        <div class="row">
+
+            <div class="col-sm-6 rates">
+                <h3>Rates</h3>
+                <p>1 Photo: $1,000<p>Wedding: $1,000,000<p>Signature: $100</p>
+            </div>
+
+            <div class="col-sm-6 faq">
+                <h3>FAQ</h3>
+                <div class="item">
+                    <p class="qa" answer="A: Because I'm the best."><span>Q: Why are your prices so high?</span></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="box">
+            <div>You know where to reach me.</div>
+            <div><a href="https://www.facebook.com"><i class="fa fa-2x fa-facebook-official"></i></a><a href="https://www.instagram.com"><i class="fa fa-2x fa-instagram"></i></a></div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        // Add scrollspy to <body>
+        $('body').scrollspy({target: ".navbar", offset: 50});
+
+        // Add smooth scrolling to all links inside a navbar
+        $(".navbar-collapse a").on('click', function(event){
+
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash (#)
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+        });
+        });
+    </script>
+    <script type="text/javascript">
+        $('#navbar-brand').hide();
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > ($(window).height() - 50))
+             {
+                $('#navbar-brand').fadeIn();
+             }
+            else
+             {
+                $('#navbar-brand').fadeOut();
+             }
+         });
+    </script>
+</body>
+</html>

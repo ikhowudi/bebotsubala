@@ -1,0 +1,252 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Roboto;
+    font-size: 1.5em;
+    color: #636459;
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.navbar {
+    border-width: 0px;
+    background-color: rgba(0,0,0,0.0);
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: white;
+    text-shadow: 1px 1px 6px black;
+    text-transform: uppercase;
+}
+
+.nav.navbar-nav li a {
+    color: white;
+    text-shadow: 1px 1px 6px black;
+    text-transform: uppercase;
+}
+
+.navbar-toggle {
+    border: none;
+    outline: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+    box-shadow: 1px 1px 6px #515151;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+    background-color: rgba(0,0,0,0.05);
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    color: white;
+    background-color: rgba(0,0,0,0.05);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: rgba(0,0,0,0.05);
+}
+
+header {
+    background-image: url(images/pine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    line-height: 100vh;
+    text-shadow: 1px 1px 6px white;
+    font-size: 5vw;
+}
+
+h3 {
+    padding-bottom: 1em;
+}
+
+.lightertext {
+    color: #777;
+}
+
+section {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding-top: 50px;
+    font-size: 1.4em;
+}
+
+.box {
+    padding-top: 30vh;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+#about, #ratesfaq {
+    background-color: #EDEFDD;
+}
+
+#work, #contact {
+    background-color: #D5D7C7;
+}
+
+.inner {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 5%;
+}
+
+.innerwork {
+    padding-top: 50px;
+    width: 100%;
+}
+
+.workli > a {
+    display: inline-block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 20%;
+    vertical-align: middle;
+    width: 100%;
+    color: #636459;
+    text-decoration: none;
+}
+
+.workli:hover {
+    background-color: #CACCB6;
+    width: 100%;
+}
+
+#workli1:hover {
+    background-image: url(images/1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.row {
+    margin: 0;
+    padding: 10%;
+}
+
+.rates {
+    margin: auto;
+    padding: 10vh;
+}
+
+.rates > p {
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
+.faq {
+    margin: auto;
+    padding: 10vh;
+}
+
+.modal.and.carousel {
+    position: fixed;  /*Needed because the carousel overrides the position property*/
+}
+
+.modal-content {
+    border: 0 !important;
+    -webkit-border-radius: 0px !important ;
+    -moz-border-radius: 0px !important ;
+    border-radius: 0 !important ;
+}
+
+.modal-body {
+    padding: 0px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none !important;
+    filter: none !important;
+}
+
+img {
+    width: 100%;
+}
+
+.glyphicon {
+    padding-top: 170%;
+}
+
+i {
+    padding: 1vw;
+    color: #636459;
+}
+
+i:hover {
+    color: #676C39;
+}
+
+a {
+    color: black;
+}
+
+
+@media screen and (max-width: 370px) {
+    .navbar-default .navbar-brand {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 7vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 860px) {
+    .navbar-default .navbar-brand {
+        font-size: 1.9vw;
+    }
+    .navbar-nav li a {
+        font-size: 1.8vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .inner {
+        width: 768px;
+    }
+}
+
+.qa {
+    text-align: left;
+    padding: 1vmin;
+}
+.qa:hover {
+    background-color: #CACCB6;
+}
+.item:hover p.qa span{
+    display: none;
+}
+.item:hover p.qa:after{
+    content: attr(answer);
+}
