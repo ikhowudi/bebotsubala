@@ -2,24 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bebot Subala Photography</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="images/b.png">
     <script src="jquery.min.js"></script>
     <script src="bootstrap.min.js"></script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" id="home">
-    <header><h1>Bebot <span class="lightertext">Subala</span></h1></header>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <video loop muted autoplay poster="images/frame.png">
+        <source src="lightleaves.mp4" type="video/mp4">
+    </video>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <section id="home"><h1>Bebot <span class="lightertext">Subala</span></h1></section>
+
+    <nav class="navbar navbar-default navbar-fixed-bottom" data-spy="affixed">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a id="navbar-brand" class="navbar-brand" href="#">Bebot Subala Photography</a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -28,23 +32,22 @@
                 </button>
             </div>
 
-            <div class="navbar-collapse navbar-right collapse">
+            <div class="navbar-collapse navbar-left collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home" class="first-li">Bebot<span style="color:#9e9f93;">Subala</span></a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#work">Featured Work</a></li>
-                    <li><a href="#ratesfaq">Rates & FAQ</a></li>
+                    <li><a href="#rates">Rates & FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="about"><p class="inner">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat sapien ac nulla rutrum dictum. Etiam interdum commodo tincidunt. Proin non dapibus nisl. Duis fermentum condimentum nunc, sed placerat nulla efficitur sit amet. Fusce commodo pretium neque, a vulputate purus ornare sit amet. Quisque cursus tempus justo. Sed congue congue neque, nec laoreet risus sollicitudin sed. Nulla facilisi. Fusce vehicula nibh eu ligula pellentesque venenatis. Ut nisi erat, viverra in neque nec, ultricies varius nulla. Maecenas quis risus et augue blandit maximus. Fusce dictum at lorem quis ultrices. Aenean non malesuada sapien, quis aliquam quam. Nam semper, ipsum eu suscipit facilisis, erat purus eleifend nisi, nec consectetur turpis nibh vel nisi." - People</p></section>
+    <section id="about" class="padding small-padding"><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat sapien ac nulla rutrum dictum. Etiam interdum commodo tincidunt. Proin non dapibus nisl. Duis fermentum condimentum nunc, sed placerat nulla efficitur sit amet. Fusce commodo pretium neque, a vulputate purus ornare sit amet. Quisque cursus tempus justo. Sed congue congue neque, nec laoreet risus sollicitudin sed. Nulla facilisi. Fusce vehicula nibh eu ligula pellentesque venenatis. Ut nisi erat, viverra in neque nec, ultricies varius nulla. Maecenas quis risus et augue blandit maximus. Fusce dictum at lorem quis ultrices. Aenean non malesuada sapien, quis aliquam quam. Nam semper, ipsum eu suscipit facilisis, erat purus eleifend nisi, nec consectetur turpis nibh vel nisi." - People</p></section>
 
-    <section id="work">
-        <div class="innerwork">
-        <!-- <h3>Featured Work</h3> -->
+    <section id="work" class="vertical-padding small-padding">
+        <h3>Featured Work</h3>
         <div>
             <div id="workli1" class="workli"><a href="#lightbox1" data-toggle="modal">Example 1</a></div>
 
@@ -71,10 +74,10 @@
                             </div>
                           </div><!-- /.carousel-inner -->
                           <a class="left carousel-control" href="#lightbox1" role="button" data-slide="prev">
-                            <span class="fa glyphicon fa-2x fa-chevron-left" aria-hidden="true"></span>
+                            <span class="fa arrow fa-2x fa-chevron-left" aria-hidden="true"></span>
                           </a>
                           <a class="right carousel-control" href="#lightbox1" role="button" data-slide="next">
-                            <span class="fa glyphicon fa-2x fa-chevron-right" aria-hidden="true"></span>
+                            <span class="fa arrow fa-2x fa-chevron-right" aria-hidden="true"></span>
                           </a>
                         </div><!-- /.modal-body -->
                       </div><!-- /.modal-content -->
@@ -87,34 +90,51 @@
             <div class="workli"><a href="#example4">Example 4</a></div>
             <div class="workli"><a href="#example5">Example 5</a></div>
         </div>
-        </div>
     </section>
 
-    <section id="ratesfaq">
-        <div class="row">
-
-            <div class="col-sm-6 rates">
+    <section id="rates" class="padding small-padding">
+        <div>
+            <div class="col-sm-6">
                 <h3>Rates</h3>
                 <p>1 Photo: $1,000<p>Wedding: $1,000,000<p>Signature: $100</p>
             </div>
 
-            <div class="col-sm-6 faq">
+            <div class="col-sm-6 small-padding">
                 <h3>FAQ</h3>
-                <div class="item">
-                    <p class="qa" answer="A: Because I'm the best."><span>Q: Why are your prices so high?</span></p>
+                <div>
+                    <p>Q: Why are your prices so high?</p>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <section id="contact">
-        <div class="box">
+    <section id="contact" class="padding small-padding">
+        <div>
             <div>You know where to reach me.</div>
             <div><a href="https://www.facebook.com"><i class="fa fa-2x fa-facebook-official"></i></a><a href="https://www.instagram.com"><i class="fa fa-2x fa-instagram"></i></a></div>
         </div>
     </section>
 
+    <script type="text/javascript">
+        var height = $(window).height() - $("nav").height();
+        $(".navbar").affix({offset: {top: height} });
+    </script>
+    <script type="text/javascript">
+        $(window).scroll(function() {
+            var $navbar = $('.navbar')
+
+            if ($(this).scrollTop() > ($(window).height() - 50))
+             {
+                $navbar.addClass("navbar-shadow");
+                $navbar.addClass("small-nav")
+             }
+            else
+             {
+                $navbar.removeClass("navbar-shadow");
+                $navbar.removeClass("small.nav")
+             }
+         });
+    </script>
     <script type="text/javascript">
         // Add scrollspy to <body>
         $('body').scrollspy({target: ".navbar", offset: 50});
@@ -140,17 +160,9 @@
         });
     </script>
     <script type="text/javascript">
-        $('#navbar-brand').hide();
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > ($(window).height() - 50))
-             {
-                $('#navbar-brand').fadeIn();
-             }
-            else
-             {
-                $('#navbar-brand').fadeOut();
-             }
-         });
+        $(document).on('click',function(){
+            $('.collapse').collapse('hide');
+        })
     </script>
 </body>
 </html>
